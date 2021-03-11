@@ -49,8 +49,8 @@ Evaluate:
 ### BERT
 
 no extra training!
-
 pre-trained model: *bert-base-german-cased* <sup>1</sup> is used 
+
 
 Apply:
 
