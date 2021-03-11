@@ -16,41 +16,47 @@
 ## Unsupervised Approach
 (training on ~ 1.078 million simple sentences from German Simple Wikipedia)
 
-COLSTM - train:
+### COLSTM 
+
+Train:
 
     python unsupervised/COLSTM/train.py --data_dir data/GPWKP-simple --checkpoint_dir unsupervised/COLSTM/checkpoints --savefile 'gpwkp-simple-1.078M'
 
-COLSTM - apply:
+Apply:
 
     python unsupervised/COLSTM/apply.py --data data/MERLIN/merlin_martinc_all4uns.csv --output unsupervised/COLSTM/results/results_uns_colstm_merlin.csv --model unsupervised/COLSTM/checkpoints/gpwkp-simple-1.078M.h5 --settings unsupervised/COLSTM/checkpoints/gpwkp-simple-1.078M.pkl --vocabulary data/GPWKP-simple/vocab.npz
 
-COLSTM - evaluate:
+Evaluate:
 
     python unsupervised/evaluate.py  --input unsupervised/COLSTM/results/results_uns_colstm_merlin.csv
 
 
-TCN - train:
+### TCN
+
+Train:
 
     python unsupervised/TCN/train.py --data data/GPWKP-simple --model_path unsupervised/TCN/trained_models/gpwkp-simple-1.078M.pt
 
-TCN - apply:
+Apply:
 
     python3 unsupervised/TCN/apply.py --data data/MERLIN/merlin_martinc_all4uns.csv --lm_model_path unsupervised/TCN/trained_models/tcn_gpwkp-simple-1.078M_rattle.pt --lm_data data/GPWKP-simple --results_path unsupervised/TCN/results/results_uns_tcn_merlin.csv
 
-TCN - evaluate:
+Evaluate:
 
     python unsupervised/evaluate.py  --input unsupervised/TCN/results/results_uns_tcn_merlin.csv
 
 
-BERT - no extra training!
+### BERT
 
-    pre-trained model: *bert-base-german-cased*<sup>1</sup> is used 
+no extra training!
 
-BERT - apply:
+pre-trained model: *bert-base-german-cased* <sup>1</sup> is used 
+
+Apply:
 
     python3 unsupervised/BERT/apply.py --input data/MERLIN/merlin_martinc_all4uns.csv --output unsupervised/BERT/results/results_uns_bert_merlin.csv 
 
-BERT - evaluate:
+Evaluate:
 
     python unsupervised/evaluate.py  --input unsupervised/BERT/results/results_uns_bert_merlin.csv
 
