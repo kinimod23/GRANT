@@ -4,7 +4,7 @@ import numpy as np
 import os
 import pickle
 from util.BatchLoaderUnk import BatchLoaderUnk, Tokens
-from LSTMCNN import LSTMCNN
+from COLSTM import COLSTM
 from math import exp
 
 Train, Validation, Test = 0, 1, 2

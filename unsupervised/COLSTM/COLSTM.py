@@ -207,7 +207,7 @@ def CNN(seq_length, length, input_size, feature_maps, kernels, x):
     x = Reshape((seq_length, sum(feature_maps)))(x)
     return x
 
-def LSTMCNN(opt):
+def COLSTM(opt):
     # opt.seq_length = number of time steps (words) in each batch
     # opt.rnn_size = dimensionality of hidden layers
     # opt.num_layers = number of layers
