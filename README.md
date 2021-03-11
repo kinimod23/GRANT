@@ -13,6 +13,10 @@
 
 ----------------------------------------------------------------------------------------------
 
+
+    pip install -r requirements.txt
+
+
 ## Unsupervised Approach
 (training on ~ 1.078 million simple sentences from German Simple Wikipedia)
 

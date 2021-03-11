@@ -1,0 +1,14 @@
+pandas==1.0.5
+nltk==3.5
+bs4==0.0.1
+beautifulsoup4==4.9.1
+numpy==1.16.2
+torch==1.5.0
+tqdm==4.47.0
+transformers==3.0.1
+scikit-learn==0.21.3
+statsmodels==0.11.1
+matplotlib==3.3.0
+scipy==1.4.1
+tensorflow==2.3.0
+keras==2.4.3
