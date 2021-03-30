@@ -5,8 +5,6 @@
 * Falko Dataset https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/forschung/falko/Falko-Handbuchv2.0.pdf
 * CLEG Dataset https://korpling.german.hu-berlin.de/public/CLEG13/CLEG13_documentation.pdf
 * WebCorpus Dataset https://www.aclweb.org/anthology/2020.lrec-1.404/
-* APA Dataset https://www.capito.eu
-* Capito Dataset https://www.capito.eu
 * MERLIN Dataset https://www.aclweb.org/anthology/L14-1488/
 * Evaluation https://www.derdiedaf.com/c-191
 
